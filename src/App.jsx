@@ -4,7 +4,7 @@ import NavigationSystem from './componenet/navigationSystem/navigationSystem';
 import Home from './componenet/Home';
 import API_KEY from './API_KEY';
 const App = () => {
-    const section = 'popular';
+    const section = 'top_rated';
     const apikey = API_KEY;
     const page = '1';
     const api = `https://api.themoviedb.org/3/movie/${section}?api_key=${apikey}&language=en-US&page=${page}`;
@@ -18,7 +18,7 @@ const App = () => {
                 <div className='mian_app'>
                     <NavigationSystem />
                     <Routes>
-                        <Route exact path='/' componenet={<Home />} />
+                        <Route exact path='/' element={<Home data={data} />} />
                     </Routes>
                 </div>
             </Router>

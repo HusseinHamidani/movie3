@@ -108,7 +108,7 @@ function NavigationSystem() {
                         className={`${colorActivationSeries}`}
                     >
                         <GiFilmStrip />
-                        Series
+                        TV
                     </Link>
                 </li>
                 <li className='navigatoin_links'>
