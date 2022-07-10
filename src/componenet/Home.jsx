@@ -1,7 +1,7 @@
 import Latest from './section/latest';
 import './styles/style.css';
 const Home = (props) => {
-    const data = props.data.results;
+    const data = props.data;
     console.log(props.data.results);
     return (
         <div className='main_home_conatiner'>

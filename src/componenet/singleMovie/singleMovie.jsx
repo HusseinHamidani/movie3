@@ -1,4 +1,3 @@
-import useFetch from '../Movies/Fetching';
 import '../styles/style.css';
 const SingleMovie = ({ data }) => {
     console.log(data);
@@ -7,7 +6,8 @@ const SingleMovie = ({ data }) => {
             {data &&
                 data.map((singleData) => (
                     <div key={singleData.id} className='single_movie_output'>
-                        <h2 className='miantitle'>{singleData.title}</h2>
+                        <h2 className='miantitle'>{singleData.name}</h2>
+                        <img src={singleData.image.original} alt='' />
                     </div>
                 ))}
         </div>
