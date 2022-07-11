@@ -4,8 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-color: #111;
   font-family: "Poppins", sans-serif;
+}
+
+.mian_app {
+  background: #111;
 }
 
 .navigationSystem {
@@ -52,6 +55,74 @@
   flex-direction: column;
 }
 
-.miantitle {
+.main_single_movie_handler {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  overflow-y: scroll;
+  padding: 20px;
+  border-radius: 10px;
+}
+.main_single_movie_handler .single_movie_output {
+  height: auto;
+  width: auto;
+  background: #262424;
+  border-radius: 10px;
+}
+.main_single_movie_handler .single_movie_output .main_image_handler {
+  height: 100%;
+  width: 100%;
+}
+.main_single_movie_handler .single_movie_output .main_image_handler img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation .main_title {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   color: #fff;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation .movie_type_rating_informations {
+  height: 50%;
+  width: 100%;
+  padding-top: 10px;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation .movie_type_rating_informations .movie_type_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation .movie_type_rating_informations .movie_type_info .single_movie_type {
+  font-size: 0.8rem;
+  margin-right: 8px;
+  color: #fff;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation .movie_type_rating_informations .main_rating {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid #b14efc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_single_movie_handler .single_movie_output .main_movie_inofmation .movie_type_rating_informations .main_rating h2 {
+  background: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

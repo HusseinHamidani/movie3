@@ -98,7 +98,7 @@ function NavigationSystem() {
                         className={`${colorActivationFavorit}`}
                     >
                         <TbMovie />
-                        Movies
+                        search
                     </Link>
                 </li>
                 <li className='navigatoin_links'>
@@ -108,7 +108,7 @@ function NavigationSystem() {
                         className={`${colorActivationSeries}`}
                     >
                         <GiFilmStrip />
-                        TV
+                        idk
                     </Link>
                 </li>
                 <li className='navigatoin_links'>
